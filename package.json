@@ -1,0 +1,11 @@
+{
+  "name": "rent-stroller",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 3333 --no-port-switching",
+    "start": "serve . -l 3333 --no-port-switching"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

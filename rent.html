@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent — Rent Stroller</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="index.html">Rent Stroller</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="index.html">Home</a>
+          <a href="rent.html" aria-current="page">Rent</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="main" aria-label="Rent">
+      <h1 class="page-title">Rent</h1>
+      <p class="page-lead">
+        Pick an item, then send an inquiry with your rental dates. Prices shown are
+        starting rates per day.
+      </p>
+      <ul class="product-list product-list--rent">
+        <li class="product-card">
+          <div class="product-card__media">
+            <img
+              class="product-card__img"
+              src="images/stroller.jpg"
+              alt=""
+              width="640"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h2 class="product-card__name">City stroller</h2>
+          <p class="product-card__meta">Light fold for pavements and everyday use.</p>
+          <p class="product-card__price">from $9 a day</p>
+          <button type="button" class="btn btn--primary js-inquire" data-product="City stroller">
+            Send inquiry
+          </button>
+        </li>
+        <li class="product-card">
+          <div class="product-card__media">
+            <img
+              class="product-card__img"
+              src="images/stroller.jpg"
+              alt=""
+              width="640"
+              height="400"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <h2 class="product-card__name">Travel stroller</h2>
+          <p class="product-card__meta">Compact fold for trips and public transport.</p>
+          <p class="product-card__price">from $9 a day</p>
+          <button type="button" class="btn btn--primary js-inquire" data-product="Travel stroller">
+            Send inquiry
+          </button>
+        </li>
+      </ul>
+
+      <section class="inquiry" id="inquiry" aria-labelledby="inquiry-heading">
+        <h2 id="inquiry-heading" class="inquiry__title">Rental inquiry</h2>
+        <p class="inquiry__hint">
+          Fill this out after choosing an item above. You will be redirected to a
+          thank-you page after sending.
+        </p>
+        <form
+          id="rent-inquiry"
+          class="inquiry-form"
+          action="https://formsubmit.co/zeljkocalic516@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="Rent Stroller — rental inquiry" />
+          <input type="hidden" name="_next" id="inquiry-next" value="" />
+          <input type="text" name="_honey" class="inquiry-form__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="form-field">
+            <label for="inquiry-product">Item</label>
+            <input
+              id="inquiry-product"
+              name="product"
+              type="text"
+              required
+              autocomplete="off"
+              placeholder="e.g. City stroller"
+            />
+          </div>
+          <div class="form-field">
+            <label for="inquiry-name">Your name</label>
+            <input id="inquiry-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="inquiry-email">Email</label>
+            <input id="inquiry-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="form-field">
+            <label for="inquiry-phone">Phone <span class="form-field__optional">(optional)</span></label>
+            <input id="inquiry-phone" name="phone" type="tel" autocomplete="tel" />
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="inquiry-start">Start date</label>
+              <input id="inquiry-start" name="start_date" type="date" required />
+            </div>
+            <div class="form-field">
+              <label for="inquiry-end">End date</label>
+              <input id="inquiry-end" name="end_date" type="date" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="inquiry-message">Notes</label>
+            <textarea
+              id="inquiry-message"
+              name="message"
+              rows="4"
+              placeholder="Pickup preferences, questions, or other dates if flexible."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary inquiry-form__submit">Send inquiry</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      (function () {
+        var form = document.getElementById("rent-inquiry");
+        var productInput = document.getElementById("inquiry-product");
+        var nextInput = document.getElementById("inquiry-next");
+        if (nextInput) {
+          nextInput.value =
+            window.location.href.replace(/[^/]*$/, "") + "thanks.html";
+        }
+        if (!form || !productInput) return;
+        document.querySelectorAll(".js-inquire").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            productInput.value = btn.getAttribute("data-product") || "";
+            form.scrollIntoView({ behavior: "smooth", block: "start" });
+            var nameField = document.getElementById("inquiry-name");
+            if (nameField) nameField.focus();
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
