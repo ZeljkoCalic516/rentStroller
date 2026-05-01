@@ -239,6 +239,19 @@ img {
   line-height: 1.65;
 }
 
+.page-lead a {
+  color: var(--color-primary-deep);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--duration) var(--ease);
+}
+
+.page-lead a:hover {
+  color: var(--color-primary);
+}
+
 /* --------------------------------------------------------
    PROSE (about section)
    -------------------------------------------------------- */
@@ -970,6 +983,14 @@ button.btn {
   line-height: 1.65;
   color: var(--color-text-muted);
   animation: fadeUp 0.3s var(--ease) both;
+}
+
+.faq__answer p {
+  margin: 0 0 var(--space-sm);
+}
+
+.faq__answer p:last-child {
+  margin-bottom: 0;
 }
 
 /* --------------------------------------------------------
