@@ -21,8 +21,15 @@
     <main class="page" id="main" aria-label="Rent">
       <h1 class="page-title">Rent</h1>
       <p class="page-lead">
-        Pick an item, then send an inquiry with your rental dates. Prices shown are
-        starting rates per day - longer rentals are cheaper.
+        Pick an item, then send an inquiry with your rental dates. Prices are in
+        <strong>EUR</strong> (starting rates per day; longer stays are usually cheaper).
+        Delivery cost depends on your address and timing - we confirm everything in our
+        reply.
+      </p>
+      <p class="rent-catalog-note">
+        We are replacing sample listings below with real models, photos, and prices.
+        If something you need is not shown yet, choose the closest option or describe
+        it in the form notes - we will still quote in EUR.
       </p>
       <ul class="product-list product-list--rent">
         <li class="product-card">
@@ -37,7 +44,7 @@
           </div>
           <h2 class="product-card__name">City stroller</h2>
           <p class="product-card__meta">Light fold for pavements and everyday use.</p>
-          <p class="product-card__price">from $9 a day</p>
+          <p class="product-card__price">from &euro;9 / day (sample)</p>
           <button type="button" class="btn btn--primary js-inquire" data-product="City stroller">
             Book Now
           </button>
@@ -54,7 +61,7 @@
           </div>
           <h2 class="product-card__name">Travel stroller</h2>
           <p class="product-card__meta">Compact fold for trips and public transport.</p>
-          <p class="product-card__price">from $9 a day</p>
+          <p class="product-card__price">from &euro;9 / day (sample)</p>
           <button type="button" class="btn btn--primary js-inquire" data-product="Travel stroller">
             Book Now
           </button>
@@ -64,8 +71,8 @@
       <section class="inquiry" id="inquiry" aria-labelledby="inquiry-heading">
         <h2 id="inquiry-heading" class="inquiry__title">Rental inquiry</h2>
         <p class="inquiry__hint">
-          Fill this out after choosing an item above. You will be redirected to a
-          thank-you page after sending.
+          Fill this out after choosing an item above. We usually reply within minutes.
+          You will be redirected to a thank-you page after sending.
         </p>
         <form
           id="rent-inquiry"
@@ -116,9 +123,14 @@
               id="inquiry-message"
               name="message"
               rows="4"
-              placeholder="Pickup or delivery preferences, questions, or flexible dates."
+              placeholder="Pickup or delivery address, timing preferences, questions, or flexible dates."
             ></textarea>
           </div>
+          <p class="inquiry-form__legal">
+            By sending, you acknowledge our
+            <a href="terms.html">rental terms</a> and
+            <a href="privacy.html">privacy notice</a>.
+          </p>
           <button type="submit" class="btn btn--primary inquiry-form__submit">Send inquiry</button>
         </form>
       </section>
@@ -145,8 +157,15 @@
     </script>
     <footer class="site-footer">
       <div class="site-footer__inner">
-        Rent Stroller &middot; Toše Jovanovića 1, Belgrade &middot;
-        <a href="tel:+381613031749">061 303 1749</a>
+        <p class="site-footer__line">
+          Rent Stroller &middot; Toše Jovanovića 1, Belgrade &middot;
+          <a href="tel:+381613031749">061 303 1749</a>
+        </p>
+        <p class="site-footer__line site-footer__line--legal">
+          <a href="terms.html">Rental terms</a>
+          &middot;
+          <a href="privacy.html">Privacy</a>
+        </p>
       </div>
     </footer>
   </body>
