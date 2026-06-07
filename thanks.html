@@ -3,13 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank you - Rent Stroller</title>
+    <title>Thank you — Rent Stroller</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="site-logo" href="index.html">Rent Stroller</a>
+        <a class="site-logo" href="index.html">
+          <img
+            class="site-logo__mark"
+            src="images/logo.png"
+            alt=""
+            width="36"
+            height="36"
+            decoding="async"
+          />
+          <span class="site-logo__text">Rent Stroller</span>
+        </a>
         <nav class="site-nav" aria-label="Main">
           <a href="index.html">Home</a>
           <a href="how-it-works.html">How it works</a>
@@ -18,15 +28,49 @@
         </nav>
       </div>
     </header>
-    <main class="page" id="main" aria-label="Thank you">
-      <h1 class="page-title">Thank you</h1>
-      <p class="page-lead">
-        Your inquiry was sent. We usually reply within minutes.
-      </p>
-      <p class="prose__cta prose__cta--thanks">
-        <a class="btn btn--primary" href="index.html">Back to home</a>
-        <a class="btn btn--ghost" href="rent.html">Rent</a>
-      </p>
+    <main class="page page--thanks" id="main" aria-label="Thank you">
+      <div class="thank-you">
+        <div class="thank-you__badge" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+            <polyline points="22 4 12 14.01 9 11.01" />
+          </svg>
+        </div>
+        <h1 class="thank-you__title">You're all set</h1>
+        <p class="thank-you__lead">
+          Your inquiry reached us safely. We are looking forward to helping you
+          enjoy Belgrade with less to carry and more peace of mind.
+        </p>
+
+        <div class="thank-you__card">
+          <h2 class="thank-you__card-title">What happens next</h2>
+          <ol class="thank-you__steps">
+            <li>
+              <strong>Check your inbox</strong>
+              <span>We sent a short confirmation to the email you provided (it may take a minute).</span>
+            </li>
+            <li>
+              <strong>We review your request</strong>
+              <span>Dates, item, and pickup or delivery — we check what is available.</span>
+            </li>
+            <li>
+              <strong>We reply personally</strong>
+              <span>You'll get availability and a price in EUR, with simple next steps.</span>
+            </li>
+          </ol>
+        </div>
+
+        <p class="thank-you__note">
+          No email yet? Check your spam folder, or reach us directly at
+          <a href="tel:+381613031749">061 303 1749</a>
+          or <a href="contact.html">contact</a>.
+        </p>
+
+        <div class="thank-you__actions">
+          <a class="btn btn--primary" href="index.html">Back to home</a>
+          <a class="btn btn--ghost" href="rent.html">Browse more items</a>
+        </div>
+      </div>
     </main>
     <footer class="site-footer">
       <div class="site-footer__inner">
