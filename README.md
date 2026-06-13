@@ -16,4 +16,4 @@ Drop one photo per listing. Use these **exact filenames** (JPG or PNG bytes are 
 | `car-seat.jpg` | Car seat |
 | `toddler-scooter.jpg` | Toddler push scooter |
 
-Rename in Finder only changes the extension label—export/save as JPEG or PNG with the name above, or use Preview **Export** if converting format.
+Rename in Finder only changes the extension label-export/save as JPEG or PNG with the name above, or use Preview **Export** if converting format.
