@@ -1,0 +1,29 @@
+# Rent Stroller
+
+> Rent Stroller is a small, family-run baby gear rental service in Belgrade, Serbia. We rent clean, safety-checked strollers, high chairs, baby car seats, and toddler scooters for short-term use, with pickup in Belgrade or delivery to your hotel, apartment, or Nikola Tesla Airport.
+
+## Key facts
+
+- Business name: Rent Stroller
+- Location: Toše Jovanovića 1, Belgrade, Serbia
+- Service area: Belgrade (including hotels and Nikola Tesla Airport)
+- Phone: +381 61 303 1749
+- Email: rentstrollerbelgrade@gmail.com
+- Website: https://rentstrollerbelgrade.com/
+- Pricing: quoted in EUR; starting daily rates - strollers from €12/day, high chair from €8/day, car seat from €10/day, toddler scooter from €5/day. Longer rentals usually cost less per day.
+- No deposit or fund-holding ID checks required.
+- Pickup by appointment, or delivery (fee depends on address and timing).
+
+## Items for rent
+
+- Cybex Balios S Lux 3-in-1 stroller (beige and black) - from €12/day
+- Chicco Polly Armonia high chair - from €8/day
+- Lorelli Capella i-Size car seat - from €10/day
+- Scoot & Ride Highwaykick 1 Push & Go toddler scooter - from €5/day
+
+## Pages
+
+- [Home](https://rentstrollerbelgrade.com/): overview of the stroller and baby gear rental service in Belgrade.
+- [How it works](https://rentstrollerbelgrade.com/how-it-works.html): the rental process, what is included, and frequently asked questions.
+- [Rent](https://rentstrollerbelgrade.com/rent.html): catalog of items with prices and an inquiry form.
+- [Contact](https://rentstrollerbelgrade.com/contact.html): phone, email, address, and pickup/delivery details.
